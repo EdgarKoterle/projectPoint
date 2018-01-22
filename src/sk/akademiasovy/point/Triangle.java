@@ -10,4 +10,29 @@ public class Triangle {
         this.b = b;
         this.c = c;
     }
+
+    public double getSideA()
+    {
+        return b.getDistanceFromOtherPoint(c);
+    }
+
+    public double getSideB()
+    {
+        return a.getDistanceFromOtherPoint(c);
+    }
+
+    public double getSideC()
+    {
+        return b.getDistanceFromOtherPoint(a);
+    }
+
+    public double getArea()
+    {
+
+    }
+
+    public double getPerimeter()
+    {
+        return getSideA()+getSideB()+getSideC();
+    }
 }
