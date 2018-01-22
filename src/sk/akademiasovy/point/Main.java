@@ -31,7 +31,7 @@ public class Main {
 
         Geometry[] arr=new Geometry[10];
         int i;
-        for (1=0; i<10; i++)
+        for (i=0; i<10; i++)
         {
             Point3D p=new Point3D();
             p.generateRandomCord();
@@ -40,5 +40,19 @@ public class Main {
 
         for (Geometry g:arr)
             ((Point3D)g).print();
+
+        Point3D arrPoints[]=new Point3D[10];
+
+        for (i=0;i<10;i++){
+            arrPoints[i]=new Point3D();
+            arrPoints[i].generateRandomCord();
+            arrPoints[i].print();
+            System.out.println();
+        }
+
+        Point bod15=new Point(2,5);
+
+        Line line1=new Line(bod15, new Point(10,4));
+        Line line2=new Line(1,3,4,6);
     }
 }

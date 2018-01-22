@@ -1,5 +1,5 @@
 package sk.akademiasovy.point;
 
 public interface Geometry {
-    void getDistance();
+    double getDistance();
 }
