@@ -14,8 +14,13 @@ public class Line {
         this.b=new Point (xb, yb);
     }
 
-    /*public double getLength()
+    public double getLength()
     {
 
-    }*/
+    }
+
+    public double getMiddlePointOfLine()
+    {
+
+    }
 }
