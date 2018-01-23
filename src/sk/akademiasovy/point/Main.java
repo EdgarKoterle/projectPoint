@@ -1,5 +1,7 @@
 package sk.akademiasovy.point;
 
+import sk.akademiasovy.date.MyDate;
+
 public class Main {
     public static void main(String[] args) {
         Point p1=new Point (8, 12);
@@ -58,5 +60,8 @@ public class Main {
         System.out.println("Length of line1 is: "+line1.getLength());
         System.out.println("Middle point of line2 is: ");
         line2.getMiddlePointOfLine().print();
+
+        MyDate myDate=new MyDate();
+        myDate.today2();
     }
 }
