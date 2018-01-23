@@ -16,11 +16,11 @@ public class Line {
 
     public double getLength()
     {
-
+        return 0;
     }
 
     public double getMiddlePointOfLine()
     {
-
+        return 0;
     }
 }
