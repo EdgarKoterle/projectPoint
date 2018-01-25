@@ -12,7 +12,7 @@ public class MyDate {
 
     public void today2() {
         Date date = new Date();
-        SimpleDateFormat sdf = new SimpleDateFormat("dd. MMMM yyyy");
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss dd. MMMM yyyy EEEE");
         System.out.println(sdf.format(date));
     }
 }
