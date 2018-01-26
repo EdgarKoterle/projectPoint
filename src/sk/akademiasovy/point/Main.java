@@ -1,6 +1,7 @@
 package sk.akademiasovy.point;
 
 import sk.akademiasovy.date.MyDate;
+import sk.akademiasovy.other.MyClass;
 
 public class Main {
     public static void main(String[] args) {
@@ -62,6 +63,14 @@ public class Main {
         //line2.getMiddlePointOfLine().print();
 
         MyDate myDate=new MyDate();
+        myDate.today();
         myDate.today2();
+
+        MyClass myClass=new MyClass();
+        System.out.println(myClass.isEmailValid("janko@hrasko"));
+        System.out.println(myClass.isEmailValid("janko!5@hrasko"));
+        System.out.println(myClass.isEmailValid("janko.novak5@hrasko"));
+        System.out.println(myClass.isEmailValid("janko novak5@hrasko"));
+        System.out.println(myClass.isEmailValid("janko@hrasko@azet.sk"));
     }
 }

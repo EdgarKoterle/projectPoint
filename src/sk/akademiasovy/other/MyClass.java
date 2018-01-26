@@ -21,7 +21,19 @@ public class MyClass {
         {
             Character z=email.charAt(i);
 
-            if (Character.isAlphabetic(z) || Character.isDigit(z))
+            if(Character.isAlphabetic(z) || Character.isDigit(z) || "-@._".contains(z.toString()))
+            {
+                    if(z.charValue()=='@')
+                        countOfAt++;
+                    if(countOfAt==2)
+                        return false;
+            }
+
+            else
+                return false;
         }
+
+
+        return true;
     }
 }
